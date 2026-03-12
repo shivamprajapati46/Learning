@@ -15,7 +15,7 @@ bool isPrime(int n) {
 void primeNo(int n){
   int count = 0;
   if(n <=1) {
-    cout << "number is not eligible"  << endl  0;
+    cout << "number is not eligible"  << endl;
     return;
   }
   for(int i= 2; i<=n; i++){

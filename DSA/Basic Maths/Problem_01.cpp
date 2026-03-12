@@ -10,21 +10,20 @@ using namespace std;
 //         int lastNum = n % 10;
 //         count  = count +1;
 //         n /= 10;
-//     }
+//     +}
 //     cout << count << endl;
 // }
 
 
 //Reverse The Number
-void reverseNumber(int n)
-{
+void reverseNumber(int n){
     int rev = 0;
-    while (n > 0)
-    {
+    while (n > 0){ 
         int lastNum = n % 10;
         rev  = rev * 10 + lastNum;
         n /= 10;
     }
+
     cout << rev << endl;
 }
 
