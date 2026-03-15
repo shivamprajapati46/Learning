@@ -17,7 +17,7 @@ int gcd(int n, int m) {
 int main() {
     int n, m;
     cout << "Enter the Numbers: ";
-    cin >> n >> m;
+    cin >> n >> m
 
     int ans = gcd(n, m);
     cout << "GCD is: " << ans;

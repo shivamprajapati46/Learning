@@ -15,12 +15,7 @@ bool f(int i, string &s) {
 }
 
 int main() {
-#ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#endif
-
-    string s = "madam";
+    string s = "madqam";
 
     if (f(0, s))
         cout << "Palindrome" << endl;

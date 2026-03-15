@@ -20,11 +20,11 @@ void reverseNumber(int n){
     int rev = 0;
     while (n > 0){ 
         int lastNum = n % 10;
-        rev  = rev * 10 + lastNum;
+        rev = rev * 10 + lastNum;
         n /= 10;
     }
 
-    cout << rev << endl;
+    cout << rev << endl; 
 }
 
 int main(){

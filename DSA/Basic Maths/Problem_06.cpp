@@ -16,17 +16,16 @@ using namespace std;
 void printAllDivisior(int n){
     vector<int> vec;
 
-    for(int i = 1; i <= sqrt(n); i++){
+    for(int i = 1; i*i<=n; i++){
         if(n % i == 0){
             vec.push_back(i);
-
             if((n / i) != i){
                 vec.push_back(n / i);
             }
         }
     }
 
-    sort(vec.begin(), vec.end());
+    // sort(vec.begin(), vec.end());
 
     for(auto it : vec){
         cout << it << " ";
@@ -34,5 +33,5 @@ void printAllDivisior(int n){
 }
 
 int main(){
-    printAllDivisior(22);
+    printAllDivisior(36);
 }

@@ -1,2 +1,1 @@
-t n;
-    // cin >> n;
+endl

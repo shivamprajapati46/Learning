@@ -1,27 +1,48 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
-    string s;
-    cin >> s;
+// int main(){
+  
+//     int n;
+//     cin>>n;
+//     int arr[n];
+//     for(int i=0; i<n; i++){
+//         cin>>arr[i];
+//     }
 
-    int hash[26] = {0};
+//       int hash[12] = {0};
+//       for(int i=0; i<n; i++){
+//         hash[i]++;
+//       }
 
-    // input array + frequency count
-    for (int i = 0; i < s.length(); i++) {
-        hash[s[i]-'a']++;
-    }
+//      int q;
+//      cin>>q;
+//      while(q--){
+//         int number ;
+//         cin>>number;
+//         cout<<hash[number]<<" ";
+//      }
 
-    int q;
-    cin >> q;
-    
+//     return 0;
+// }
 
-    // answer queries
-    while (q--) {
-        char c;
-        cin >> c;
-        cout << c << " -> " << hash[c- 'a'] << endl;
-    }
+int main(){
+   string s;
+   cin>>s;
 
-    return 0;
+   int hash[256] = {0};
+   for(int i=0; i<=s.size(); i++){
+    hash[s[i] - 'a']++;
+   }
+
+   int q;
+   cin>>q;
+   while(q--){
+    char c;
+    cin>>c;
+    cout<<hash[c -'a']<<endl;
+   }
+
+  return 0;
+
 }

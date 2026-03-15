@@ -24,7 +24,7 @@ int main(){
     // int n;
     // int sum;
     // sumOfNumber(5,0);
-    //    cout << sumOfNumber1W(5);
+    //    cout << (5);
        cout<< factorialOfNumber(5);
      return 0;
 }
