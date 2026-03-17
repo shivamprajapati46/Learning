@@ -40,7 +40,7 @@ int main(){
 
     unordered_map<int,int>mpp;
 
-    for(int i=0; i<n; i++){
+    for(int i=0;i<n; i++){
         mpp[arr[i]]++;
     }
   int maxi= 0;
@@ -48,7 +48,7 @@ int main(){
     for(auto it:mpp){
         if(it.second > maxi){
             maxi=it.second;
-        }
+        } 
     }
    cout<<"Most frequent frequency = "<<maxi;
     return 0;
