@@ -19,6 +19,17 @@ using namespace std;
     return 0;
  } 
 
+ int moveZeros(int n, int arr[]){
+    int j = 0;
+    for(int i=0; i<n ;i++){
+        if(arr[i]!=0){
+            swap(arr[i],arr[j]);
+            j++;
+        }
+    }
+    return 0;
+ }
+
 
 
 int main(){
@@ -33,12 +44,12 @@ int main(){
         cin >>arr[i];
     }
 
-    int k;
-    cout<<"Left rotate element at position: ";
-    cin >> k;
+    // int k;
+    // cout<<"Left rotate element at position: ";
+    // cin >> k;
 
-    LeftRotateK(n,arr, k);
-
+    // LeftRotateK(n,arr, k);
+    moveZeros(n,arr);
     for(int i=0; i<n; i++){
         cout<<arr[i]<<" ";
     }
