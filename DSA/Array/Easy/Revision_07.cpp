@@ -13,11 +13,11 @@ vector<int> leaderInArray(int n, int arr[]){
     for(int i=n-2; i>=0; i--){
         if(arr[i] > maxFromRight){
             leaders.push_back(arr[i]);
-            maxFromRight = arr[i];  // update max
+            maxFromRight = arr[i];  
         }
     }
 
-    reverse(leaders.begin(), leaders.end()); // correct order
+    reverse(leaders.begin(), leaders.end());
     return leaders;
 }
 
