@@ -6,7 +6,6 @@ const int MAX_SIZE = 4;
 int arr[MAX_SIZE];
 int topIndex = -1; 
 
-
 void push(int x) {
     if (topIndex >= MAX_SIZE - 1) {
         cout << "Stack Overflow! Cannot push " << x << endl;
@@ -16,7 +15,6 @@ void push(int x) {
     arr[topIndex] = x;
     cout << "Pushed " << x << " onto the stack.\n";
 }
-
 
 void pop() {
     if (topIndex == -1) {
